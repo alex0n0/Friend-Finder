@@ -1,0 +1,153 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<div class="modal fade" id="recommendationModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                Friend Found
+            </div>
+            <div class="modal-body">
+                <div class="rounded-circle overflow-hidden mx-auto shadow d-flex align-items-center justify-content-center"
+                    style="height: 220px; width: 220px; border: 10px solid white; background-color: white; ">
+                    <img id="modalImage" alt="user image" height="80%" width="auto">
+                </div>
+
+                <div id="modalPrint"></div>
+            </div>
+            <div class="modal-footer">
+                <a href="/" class="btn btn-success">DONE</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="container">
+    <h3 class="my-5">Your Preferences</h3>
+    <form class="surveyForm">
+        <div class="rounded shadow p-3 mb-5">
+            <div class="form-group m-0">
+                <p class="small m-0 mb-1">Required</p>
+                <input type="text" class="form-control m-0" placeholder="Enter your name" name="name" id="name">
+            </div>
+        </div>
+
+
+        <div class="rounded shadow py-3 px-0 position-relative d-flex flex-wrap" style="padding-top: 40px !important; margin-bottom: 64px;">
+            <button id="buttonRandomize" class="btn btn-info p-2 d-flex align-items-center position-absolute" style="right: 16px; top: 16px; z-index: 10;"><i
+                    class="material-icons">shuffle</i></button>
+            <div class="form-group col-12 col-md-6">
+                <label for="select1"><b>You are a <u>foodie</u></b></label>
+                <select class="form-control" name="select1" id="select1">
+                    <option value="5">5 (Strongly agree)</option>
+                    <option value="4">4</option>
+                    <option value="3" selected>3</option>
+                    <option value="2">2</option>
+                    <option value="1">1 (Strongly disagree)</option>
+                </select>
+            </div>
+            <div class="form-group col-12 col-md-6">
+                <label for="select2"><b>You <u>love sports</u></b></label>
+                <select class="form-control" name="select2" id="select2">
+                    <option value="5">5 (Strongly agree)</option>
+                    <option value="4">4</option>
+                    <option value="3" selected>3</option>
+                    <option value="2">2</option>
+                    <option value="1">1 (Strongly disagree)</option>
+                </select>
+            </div>
+            <div class="form-group col-12 col-md-6">
+                <label for="select3"><b>You are a <u>party animal</u></b></label>
+                <select class="form-control" name="select3" id="select3">
+                    <option value="5">5 (Strongly agree)</option>
+                    <option value="4">4</option>
+                    <option value="3" selected>3</option>
+                    <option value="2">2</option>
+                    <option value="1">1 (Strongly disagree)</option>
+                </select>
+            </div>
+            <div class="form-group col-12 col-md-6">
+                <label for="select4"><b>You a <u>passionate about music</u></b></label>
+                <select class="form-control" name="select4" id="select4">
+                    <option value="5">5 (Strongly agree)</option>
+                    <option value="4">4</option>
+                    <option value="3" selected>3</option>
+                    <option value="2">2</option>
+                    <option value="1">1 (Strongly disagree)</option>
+                </select>
+            </div>
+            <div class="form-group col-12 col-md-6">
+                <label for="select5"><b>You <u>love animals</u></b></label>
+                <select class="form-control" name="select5" id="select5">
+                    <option value="5">5 (Strongly agree)</option>
+                    <option value="4">4</option>
+                    <option value="3" selected>3</option>
+                    <option value="2">2</option>
+                    <option value="1">1 (Strongly disagree)</option>
+                </select>
+            </div>
+            <div class="form-group col-12 col-md-6">
+                <label for="select6"><b>You are a <u>big spender</u></b></label>
+                <select class="form-control" name="select6" id="select6">
+                    <option value="5">5 (Strongly agree)</option>
+                    <option value="4">4</option>
+                    <option value="3" selected>3</option>
+                    <option value="2">2</option>
+                    <option value="1">1 (Strongly disagree)</option>
+                </select>
+            </div>
+            <div class="form-group col-12 col-md-6">
+                <label for="select7"><b>You are a <u>night owl</u></b></label>
+                <select class="form-control" name="select7" id="select7">
+                    <option value="5">5 (Strongly agree)</option>
+                    <option value="4">4</option>
+                    <option value="3" selected>3</option>
+                    <option value="2">2</option>
+                    <option value="1">1 (Strongly disagree)</option>
+                </select>
+            </div>
+            <div class="form-group col-12 col-md-6">
+                <label for="select8"><b>Your a an avid <u>gamer</u></b></label>
+                <select class="form-control" name="select8" id="select8">
+                    <option value="5">5 (Strongly agree)</option>
+                    <option value="4">4</option>
+                    <option value="3" selected>3</option>
+                    <option value="2">2</option>
+                    <option value="1">1 (Strongly disagree)</option>
+                </select>
+            </div>
+            <div class="form-group col-12 col-md-6">
+                <label for="select9"><b>Your are a <u>spontaneous person</u></b></label>
+                <select class="form-control" name="select9" id="select9">
+                    <option value="5">5 (Strongly agree)</option>
+                    <option value="4">4</option>
+                    <option value="3" selected>3</option>
+                    <option value="2">2</option>
+                    <option value="1">1 (Strongly disagree)</option>
+                </select>
+            </div>
+            <div class="form-group col-12 col-md-6">
+                <label for="select10"><b>You are a <u>movie geek</u></u></b></label>
+                <select class="form-control" name="select10" id="select10">
+                    <option value="5">5 (Strongly agree)</option>
+                    <option value="4">4</option>
+                    <option value="3" selected>3</option>
+                    <option value="2">2</option>
+                    <option value="1">1 (Strongly disagree)</option>
+                </select>
+            </div>
+        </div>
+    </form>
+</div>
+
+
+
+
+
+<button id="buttonSubmit" class="btn btn-primary mr-2 position-fixed"
+    style="bottom: 40px; left: 50%; transform: translateX(-50%); width: 90%; max-width: 300px;">SUBMIT</button>
+
+
+<script src="js/survey.js"></script>
+{{!-- <script src="aaa/aaa"></script> --}}
